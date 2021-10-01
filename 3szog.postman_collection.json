@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "47f58b7a-1c9d-4140-bdd9-57403e3a68bf",
+		"name": "3szog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "pelda 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"a_oldal\": 4,\r\n    \"b_oldal\": 6,\r\n    \"c_oldal\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}/api/tipizalj?ver={{ver}}",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"api",
+						"tipizalj"
+					],
+					"query": [
+						{
+							"key": "ver",
+							"value": "{{ver}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "FSGHTZDHTXFDP4rELDATOKENFGESTZTRZAERHGFCHA21324534W!ES",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
