@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "47f58b7a-1c9d-4140-bdd9-57403e3a68bf",
+		"_postman_id": "dcfb1cf4-4f37-419c-961f-8db71b1800a1",
 		"name": "3szog",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -13,6 +13,39 @@
 				"body": {
 					"mode": "raw",
 					"raw": "{\r\n    \"a_oldal\": 4,\r\n    \"b_oldal\": 6,\r\n    \"c_oldal\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}/api/tipizalj?ver={{ver}}",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"api",
+						"tipizalj"
+					],
+					"query": [
+						{
+							"key": "ver",
+							"value": "{{ver}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "t3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"a_oldal\": 1,\n    \"b_oldal\": 1,\n    \"c_oldal\": 1\n}",
 					"options": {
 						"raw": {
 							"language": "json"
