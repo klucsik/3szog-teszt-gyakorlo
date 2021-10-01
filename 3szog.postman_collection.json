@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "47f58b7a-1c9d-4140-bdd9-57403e3a68bf",
+		"_postman_id": "feee9a6d-0276-4a38-a20b-0cbe02ce7916",
 		"name": "3szog",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -32,6 +32,41 @@
 						{
 							"key": "ver",
 							"value": "{{ver}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "T7",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"a_oldal\":6,\r\n    \"b_oldal\":6,\r\n    \"c_oldal\":8\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "haromszog.herokuapp.com/api/tipizalj?ver=1",
+					"host": [
+						"haromszog",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"tipizalj"
+					],
+					"query": [
+						{
+							"key": "ver",
+							"value": "1"
 						}
 					]
 				}
